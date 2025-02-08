@@ -1,5 +1,15 @@
 import streamlit as st
 
-x = st.slider("x")  # 👈 this is a widget
 
-st.download_button("LABEL", data=f"HELLO PEOPLE {x}!", on_click="ignore")
+st.title("Download Button ignore rerun option!")
+
+x = st.slider("LABEL", 0, 100, 50)
+
+button_value = st.download_button(
+    "Download button label",
+    data=f"JUST {x} DATA STRING!",
+    on_click="ignore",
+)
+
+st.subheader("Rerun triggers balloons!")
+st.balloons()
