@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.title("Download Button ignore rerun option!")
+st.title("Download Button ignore rerun!")
 
 x = st.slider("LABEL", 0, 100, 50)
 
